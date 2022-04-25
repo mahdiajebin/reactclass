@@ -7,7 +7,7 @@ import Button from '../UI/Button';
 const ErrorModal = (props) => {
     return (
         <div>
-            <div className={styled.backdrop}> </div>
+            <div className={styled.backdrop} onClick={props.onConfirm} /> 
         <Card className ={styled.modal}>
             <header className={styled.header}>
                 <h2>
@@ -18,7 +18,7 @@ const ErrorModal = (props) => {
                 <p> {props.message}</p>
             </div>
             <footer className={styled.actions}>
-                <Button> Okay</Button>
+                <Button onClick={props.onConfirm}> Okay</Button>
             </footer>
 
 
