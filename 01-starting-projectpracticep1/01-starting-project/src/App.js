@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <AddUser onAddUser={addUserHandler} />
-      <UsersList users={[usersLists]}/>
+      <UsersList users={usersLists}/>
     </div>
   );
 }
